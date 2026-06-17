@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+:root {
+  --pola-black: #0F0E0D;
+  --pola-paper: #F5F1EA;
+  --pola-orange: #E8541F;
+}
+
+@theme inline {
+  --color-pola-black: var(--pola-black);
+  --color-pola-paper: var(--pola-paper);
+  --color-pola-orange: var(--pola-orange);
+  --color-background: var(--pola-paper);
+  --color-foreground: var(--pola-black);
+}
+
+body {
+  background: var(--pola-paper);
+  color: var(--pola-black);
+  font-family: Arial, Helvetica, sans-serif;
+}
