@@ -1,0 +1,60 @@
+# ── Node ──────────────────────────────────────────────
+node_modules/
+.pnpm-store/
+dist/
+.cache/
+.turbo/
+
+# ── Next.js ───────────────────────────────────────────
+.next/
+out/
+.vercel/
+.cloudflare/
+
+# ── Cloudflare Workers ────────────────────────────────
+.wrangler/
+worker-configuration.d.ts
+
+# ── Xcode / iOS ───────────────────────────────────────
+apps/ios/build/
+apps/ios/*.xcworkspace/
+apps/ios/Pods/
+apps/ios/DerivedData/
+apps/ios/*.ipa
+apps/ios/*.dSYM.zip
+apps/ios/*.dSYM
+apps/ios/xcuserdata/
+apps/ios/**/*.xcuserstate
+apps/ios/*.xcscmblueprint
+
+# ── Environnement ─────────────────────────────────────
+.env
+.env.local
+.env.*.local
+.dev.vars
+wrangler.toml.local
+
+# ── OS ────────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+
+# ── Éditeurs ──────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ── Logs ──────────────────────────────────────────────
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# ── TypeScript ────────────────────────────────────────
+*.tsbuildinfo
+
+# ── Tests ─────────────────────────────────────────────
+coverage/

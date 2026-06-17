@@ -1,0 +1,24 @@
+{
+  "name": "api",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "wrangler d1 migrations apply pola-db"
+  },
+  "dependencies": {
+    "hono": "^4.7.11",
+    "zod": "^3.24.4"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250621.0",
+    "drizzle-kit": "^0.31.1",
+    "drizzle-orm": "^0.44.1",
+    "typescript": "^5.8.3",
+    "wrangler": "^4.86.0"
+  }
+}

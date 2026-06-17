@@ -1,0 +1,57 @@
+name: Pola
+options:
+  bundleIdPrefix: app.pola
+  deploymentTarget:
+    iOS: "17.0"
+  xcodeVersion: "16.0"
+  swift: "6.0"
+  postGenCommand: echo "✅ Pola.xcodeproj generated"
+
+settings:
+  base:
+    SWIFT_VERSION: 6.0
+    IPHONEOS_DEPLOYMENT_TARGET: 17.0
+    TARGETED_DEVICE_FAMILY: "1"
+    ENABLE_BITCODE: NO
+    DEBUG_INFORMATION_FORMAT: dwarf-with-dsym
+    SWIFT_STRICT_CONCURRENCY: complete
+
+targets:
+  Pola:
+    type: application
+    platform: iOS
+    deploymentTarget: "17.0"
+    bundleId: app.pola.ios
+    sources:
+      - path: Pola
+        excludes:
+          - "**/.DS_Store"
+    info:
+      path: Pola/Info.plist
+      properties:
+        CFBundleDisplayName: Pola
+        CFBundleShortVersionString: "1.0"
+        CFBundleVersion: "1"
+        UILaunchScreen:
+          UIColorName: ""
+          UIImageName: ""
+        NSCameraUsageDescription: "Pola utilise votre caméra pour prendre des photos pendant l'événement."
+        NSPhotoLibraryUsageDescription: "Pola peut accéder à votre photothèque pour importer des photos."
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: false
+    entitlements:
+      path: Pola/Pola.entitlements
+      properties:
+        com.apple.developer.applesignin:
+          - Default
+        com.apple.developer.in-app-payments:
+          - ""
+        aps-environment: development
+        com.apple.security.application-groups:
+          - group.app.pola
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: app.pola.ios
+        SWIFT_STRICT_CONCURRENCY: complete
