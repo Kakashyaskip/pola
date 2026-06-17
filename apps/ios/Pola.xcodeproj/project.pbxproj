@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4A11E4AF148ACC5877A29768 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CE06B5E96E3577CDABD36F /* ContentView.swift */; };
 		53876E36CA3DDEE4DB19637B /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801972059EA045632FC8DCFF /* Typography.swift */; };
+		5701A02B3EA1485AD62840D2 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 932D803446C05030D14F682B /* GoogleSignIn */; };
 		9C739BDE7E69B62961D0BD1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD4E2418F3C005F87F31848B /* Assets.xcassets */; };
 		B8ADC5212AE70CC58D6B5415 /* PolaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556D836F54F5CD647DD741DE /* PolaApp.swift */; };
 		FDE93B76FDD6EF74D1844C4F /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FC1663043B376490C28565 /* Colors.swift */; };
@@ -24,6 +25,17 @@
 		D0FC1663043B376490C28565 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		DD4E2418F3C005F87F31848B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		462D63FD5AF5855BF10CE944 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5701A02B3EA1485AD62840D2 /* GoogleSignIn in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		458ECD34F4F256B3F0A95F79 = {
@@ -89,6 +101,7 @@
 			buildPhases = (
 				90E582C308F3E5FB3422921D /* Sources */,
 				7EEABBEEE97C7DFEA20A13C6 /* Resources */,
+				462D63FD5AF5855BF10CE944 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -96,6 +109,7 @@
 			);
 			name = Pola;
 			packageProductDependencies = (
+				932D803446C05030D14F682B /* GoogleSignIn */,
 			);
 			productName = Pola;
 			productReference = 8AF4540239FD6998C33BC6B6 /* Pola.app */;
@@ -121,6 +135,9 @@
 			);
 			mainGroup = 458ECD34F4F256B3F0A95F79;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				AF1FD7FBD6BDF9C13BDBED15 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 66CB6051430C3B8B2A0BD5C1 /* Products */;
 			projectDirPath = "";
@@ -342,6 +359,25 @@
 			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AF1FD7FBD6BDF9C13BDBED15 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		932D803446C05030D14F682B /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AF1FD7FBD6BDF9C13BDBED15 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2E627FDA83B8900B6C842FE3 /* Project object */;
 }

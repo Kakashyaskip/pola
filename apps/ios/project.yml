@@ -7,6 +7,11 @@ options:
   swift: "6.0"
   postGenCommand: echo "✅ Pola.xcodeproj generated"
 
+packages:
+  GoogleSignIn:
+    url: https://github.com/google/GoogleSignIn-iOS
+    from: "8.0.0"
+
 settings:
   base:
     SWIFT_VERSION: 6.0
@@ -26,6 +31,9 @@ targets:
       - path: Pola
         excludes:
           - "**/.DS_Store"
+    dependencies:
+      - package: GoogleSignIn
+        product: GoogleSignIn
     info:
       path: Pola/Info.plist
       properties:
@@ -41,6 +49,10 @@ targets:
           - UIInterfaceOrientationPortrait
         UIApplicationSceneManifest:
           UIApplicationSupportsMultipleScenes: false
+        GIDClientID: "PLACEHOLDER_GOOGLE_CLIENT_ID"
+        CFBundleURLTypes:
+          - CFBundleURLSchemes:
+              - "PLACEHOLDER_GOOGLE_REVERSED_CLIENT_ID"
     entitlements:
       path: Pola/Pola.entitlements
       properties:

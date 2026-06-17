@@ -1,6 +1,7 @@
 import { Hono } from 'hono'
 import { drizzle } from 'drizzle-orm/d1'
 import * as schema from './db/schema'
+import auth from './routes/auth'
 import events from './routes/events'
 import photos from './routes/photos'
 import payments from './routes/payments'
@@ -18,6 +19,7 @@ app.get('/', (c) => {
   return c.json({ status: 'ok', service: 'pola-api' })
 })
 
+app.route('/auth', auth)
 app.route('/events', events)
 app.route('/photos', photos)
 app.route('/payments', payments)

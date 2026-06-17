@@ -6,7 +6,7 @@ compatibility_flags = ["nodejs_compat"]
 [[d1_databases]]
 binding = "DB"
 database_name = "pola-db"
-database_id = "PLACEHOLDER_D1_DATABASE_ID"
+database_id = "a045c8c1-4829-4203-b403-46d40bf0fa8d"
 
 [[r2_buckets]]
 binding = "PHOTOS"
@@ -14,12 +14,12 @@ bucket_name = "pola-photos"
 
 [[kv_namespaces]]
 binding = "SESSIONS"
-id = "PLACEHOLDER_KV_NAMESPACE_ID"
+id = "51b6ba83c1834db7a6de9b96079a0c37"
 
 [vars]
 ENVIRONMENT = "development"
 JWT_ISSUER = "https://pola.app"
-APPLE_TEAM_ID = "PLACEHOLDER_APPLE_TEAM_ID"
+APPLE_TEAM_ID = "LM45PXNMJ9"
 APPLE_CLIENT_ID = "app.pola.ios"
 
 [dev]
